@@ -140,7 +140,6 @@ main {
   .icon-btn--phone:focus-visible .icon-btn__label {
     max-width: 220px;
     opacity: 1;
-    color: var(--color-orange);
   }
 }
 
@@ -220,8 +219,7 @@ main {
 
 @media (hover: hover) and (pointer: fine) {
   .mobile-menu__list a:hover {
-    border-bottom-color: var(--color-orange);
-    color: var(--color-orange);
+    border-bottom-color: var(--color-dark);
   }
 }
 
@@ -241,12 +239,6 @@ main {
   line-height: 1.4;
   letter-spacing: 2px;
   transition: color var(--transition-speed) var(--transition-easing);
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .mobile-menu__phone:hover {
-    color: var(--color-orange);
-  }
 }
 
 .link-underline {
@@ -479,8 +471,10 @@ main {
 /* ---------- Timeless ---------- */
 
 .timeless__media {
+  display: block;
   width: 100%;
   aspect-ratio: 8 / 5;
+  overflow: hidden;
 }
 
 .timeless__media img {
