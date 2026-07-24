@@ -40,6 +40,10 @@ body.no-scroll {
   overflow: hidden;
 }
 
+html:has(body.no-scroll) {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -183,6 +187,11 @@ main {
   transform: translateX(100%);
   transition: transform var(--transition-speed) var(--transition-easing);
   overflow: auto;
+  scrollbar-width: none;
+}
+
+.mobile-menu::-webkit-scrollbar {
+  display: none;
 }
 
 .mobile-menu.is-open {
@@ -268,7 +277,7 @@ main {
 
 .hero {
   position: relative;
-  min-height: 568px;
+  min-height: 100vh;
   display: flex;
   align-items: flex-end;
   padding-bottom: 40px;
@@ -605,7 +614,7 @@ main {
   }
 
   .hero {
-    min-height: 993px;
+    min-height: 100vh;
   }
   .hero__title {
     font-size: 48px;
@@ -698,7 +707,7 @@ main {
   }
 
   .hero {
-    min-height: 720px;
+    min-height: 100vh;
     padding-bottom: 64px;
   }
 
